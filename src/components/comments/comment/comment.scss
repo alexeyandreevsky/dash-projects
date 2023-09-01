@@ -1,0 +1,12 @@
+@import "styles/mixins.scss";
+
+.comment {
+  @include def-block;
+
+  max-width: 1200px;
+  width: 100%;
+
+  &__author-name {
+    font-weight: 600;
+  }
+}

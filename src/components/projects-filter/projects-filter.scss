@@ -1,0 +1,25 @@
+@import "styles/mixins.scss";
+
+.projects-filter {
+  width: 1200px;
+  padding: 20px 30px;
+  border-radius: $border-radius;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: $border-radius;
+  display: flex;
+  box-shadow: $block-shadow;
+
+  &__item {
+
+  }
+}
+
+.projects-filter-item {
+  display: flex;
+  margin-right: 8px;
+
+  &__title {
+    margin-right: 8px;
+  }
+}

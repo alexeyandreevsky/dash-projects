@@ -1,0 +1,45 @@
+@import "styles/mixins.scss";
+
+.project-info {
+  @include def-block;
+  @include def-container;
+
+  &__img-container {
+    max-width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-family: $main-title-font;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+
+  }
+
+  &__screenshots-container {
+    margin-top: 16px;
+  }
+
+  &__github-link {
+    display: block;
+    margin-top: 16px;
+  }
+
+  &__tags-container {
+    margin-top: 4px;
+  }
+
+  &__votes-block {
+    margin-top: 16px;
+  }
+}

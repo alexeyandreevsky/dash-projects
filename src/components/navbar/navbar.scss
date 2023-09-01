@@ -1,0 +1,44 @@
+@import "styles/mixins.scss";
+
+.navbar {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  &__content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+
+    span {
+      display: inline-block;
+      font-size: 25px;
+      font-style: italic;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #008de4d6;
+    }
+  }
+
+  &__logo-container {
+    height: 40px;
+
+    display: flex;
+    align-items: baseline;
+    margin-top: 4px;
+  }
+
+  &__logo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    height: 80%;
+    width: 136px;
+    object-fit: contain;
+  }
+}

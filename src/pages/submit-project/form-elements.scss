@@ -1,0 +1,112 @@
+@import "styles/mixins.scss";
+
+
+$input-title-offset: 8px;
+$input-border-radius: 8px;
+
+input[type=text],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=url] {
+  font-size: 14px;
+}
+
+button,
+input[type=submit],
+input[type=button],
+input[type=reset]
+{
+  background-color: $dash-blue;
+  border: 1px solid $dash-blue;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 12px 24px;
+
+  &:hover {
+    background-color: $dash-blue-shaded;
+    border-color: $dash-blue-shaded;
+  }
+}
+
+input[type=file]{
+  padding: 8px;
+
+  &::file-selector-button {
+    margin-right: 8px;
+    border: none;
+    background-color: $dash-blue;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+    padding: 5px 20px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  &::file-selector-button:hover {
+    background-color: $dash-blue-shaded;
+  }
+}
+
+input, textarea {
+  border: 1px solid $color-grey-light;
+  border-radius: $input-border-radius;
+  padding: 12px;
+
+  &:focus, &:focus-visible, &:active, &:active:target {
+    border-color: $dash-blue;
+    outline: none;
+  }
+}
+
+@mixin label-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.text-input {
+  &__title {
+    @include label-text;
+
+    display: block;
+    margin-bottom: $input-title-offset;
+  }
+
+  span {
+    display: block;
+  }
+
+  input {
+
+  }
+}
+
+.textarea-block {
+  &__title {
+    @include label-text;
+
+    display: block;
+    margin-bottom: $input-title-offset;
+  }
+
+  textarea {
+
+  }
+}
+
+
+.file-input {
+  &__title {
+    @include label-text;
+    margin-right: 8px;
+  }
+
+
+}

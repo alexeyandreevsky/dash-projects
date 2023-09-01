@@ -1,0 +1,76 @@
+@import "mixins.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $dash-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $dash-deep-blue;
+    text-decoration: underline;
+  }
+}
+
+body {
+  all: unset;
+  font-family: $text-font;
+  background-color: $color-gray-extra-light;
+}
+
+.app {
+  padding-bottom: 30px;
+}
+
+.page {
+  // position: fixed;
+  // background-color: $color-gray-extra-light;
+  // height: 100%;
+  // width: 100%;
+  // overflow: auto;
+}
+
+
+
+.projects-filter-item {
+  display: flex;
+  margin-right: 8px;
+
+  &__title {
+    margin-right: 8px;
+  }
+}
+
+// .projects-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 1200px;
+//   margin: 20px auto 10px;
+// }
+
+
+
+
+// .tags {
+//   &__title {
+//
+//   }
+//
+//   &__list {
+//
+//   }
+//
+//   &__item {
+//
+//   }
+// }
+
+
+//
+// .comment {
+//   &__author-name {
+//     font-weight: 600;
+//   }
+// }

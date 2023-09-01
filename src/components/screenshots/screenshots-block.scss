@@ -1,0 +1,11 @@
+@import "styles/mixins.scss";
+
+.screenshots-block {
+  &__title {
+    font-weight: 600;
+  }
+
+  &__list-container {
+    margin-top: 8px;
+  }
+}

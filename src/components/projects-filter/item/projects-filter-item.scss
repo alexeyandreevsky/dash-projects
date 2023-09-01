@@ -1,0 +1,10 @@
+@import "styles/mixins.scss";
+
+.projects-filter-item {
+  display: flex;
+  margin-right: 8px;
+
+  &__title {
+    margin-right: 8px;
+  }
+}

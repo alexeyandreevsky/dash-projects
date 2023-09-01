@@ -1,0 +1,6 @@
+@import "styles/mixins.scss";
+
+.submit-project-page {
+  @include def-block;
+  @include def-container;
+}

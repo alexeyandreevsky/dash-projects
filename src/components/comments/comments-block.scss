@@ -1,0 +1,25 @@
+@import "styles/mixins.scss";
+
+.comments-block {
+  // border-radius: $block-radius;
+  // box-shadow: $block-shadow;
+  // padding: 30px;
+  // background: #fff;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  &__title {
+    font-family: $main-title-font;
+    font-size: 22px;
+    margin-bottom: 8px;
+    padding: 10px 30px;
+
+  }
+
+  &__list {
+    .comment {
+      margin-bottom: 12px;
+    }
+  }
+}

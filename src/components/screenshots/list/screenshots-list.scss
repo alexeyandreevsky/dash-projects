@@ -1,0 +1,12 @@
+@import "styles/mixins.scss";
+
+.screenshots-list {
+  margin: 0 -8px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .screenshots-list-item {
+    margin: 0 8px;
+    width: calc(25% - 16px);
+  }
+}
